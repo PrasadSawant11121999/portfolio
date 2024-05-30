@@ -196,6 +196,12 @@ nav{
     min-height: 500px;
     background-color: rgb(16 16 16);
 }
+.Experience-container{
+    margin-top: 15px;
+    background-image: url('../asset/ExpeBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .watermark{
     font-size: 296px;
     font-weight: 900;
@@ -211,7 +217,7 @@ nav{
     font-weight: 600;
     letter-spacing: 20px;
 }
-.skill-content{
+.skill-content,.Experience-content{
     color: white;
     align-items: center;
     display: flex;
@@ -248,7 +254,7 @@ nav{
   
   @keyframes growWidth {
     from {
-      width: 150px;
+      width: 250px;
     }
     to {
       width: var(--width); 
