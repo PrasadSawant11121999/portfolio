@@ -1,2 +1,2 @@
-# portfolio
-Its my portfolio site
+# Portfolio
+My portfolio react app

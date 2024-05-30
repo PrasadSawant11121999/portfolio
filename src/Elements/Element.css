@@ -1,0 +1,43 @@
+.pie-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+  
+  .pie-chart-svg {
+    transform: rotate(-90deg);
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pie-chart-circle {
+    fill: transparent;
+    stroke: #ecb643;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-in-out;
+  }
+  
+  .skill-name {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .pie-chart-text {
+    fill: white;
+    font-size: 18px;
+    font-weight: bold;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  
