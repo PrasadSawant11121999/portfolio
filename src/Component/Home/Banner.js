@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import '../Component.css';
 import photo from '../../asset/myprofile.png';
+import python from '../../asset/PythonLogo.png';
+import excel from '../../asset/ExcelLogo.png';
+import sql from '../../asset/sql.png';
+import powerBI from '../../asset/powerBi.png';
 import { motion } from "framer-motion";
 
 const Banner = ()=>{
@@ -57,7 +61,20 @@ const Banner = ()=>{
                     </div>
                 </div>
             </div>   
-            <div className="banner-bottom-skill">
+            <div className=" row banner-bottom-skill">
+                <div className="col-md-3 d-flex align-items-center justify-content-center bottom-bar-skill">
+                    <img src={excel} className="skill me-2"/><span className="text-white skill-name">MS Excel</span>
+                </div>
+                <div className="col-md-3 d-flex align-items-center justify-content-center bottom-bar-skill">
+                    <img src={sql} className="skill me-2"/><span className="text-white skill-name">PL/SQL</span>
+                </div>
+                <div className="col-md-3 d-flex align-items-center justify-content-center bottom-bar-skill">
+                    <img src={powerBI} className="skill me-2"/><span className="text-white skill-name">Power BI</span>
+                </div>
+                <div className="col-md-3 d-flex align-items-center justify-content-center bottom-bar-skill">
+                    <img src={python} className="skill me-2"/><span className="text-white skill-name">Python</span>
+                </div>
+
             </div> 
         </div>
         

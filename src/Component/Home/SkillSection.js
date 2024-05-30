@@ -3,6 +3,8 @@ import '../Component.css';
 import PieChart  from '../../Elements/PieChart.js';
 import SkillBar from '../../Elements/OtherSkillBar.js';
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const SkillSection=()=>{
 
@@ -128,17 +130,44 @@ const SkillSection=()=>{
             </div>             
           </div>
 
-          <div className="row p-1 m-1 pb-3 otherSkills-container">
-            <div className="row ">
-              <h2 className="text-left otherSkills">Other Skills / Experties</h2>
-            </div>
-            <div className="row">
-              <SkillBar name="HTML5" width={90} />
-              <SkillBar name="CSS3" width={85}/>
-              <SkillBar name="JavaScript" width={87}/>
-              <SkillBar name="JQuery" width={88}/>
-              <SkillBar name="ASP.NET MVC" width={82}/>
-            </div>            
+          <div className="row p-1 m-1 pb-3">              
+              <div className="col-md-7 otherSkills-container p-3">
+                <div className="row ">
+                  <h2 className="text-left otherSkills">Other Skills / Experties</h2>
+                </div>
+                <SkillBar name="HTML5" width={90} />
+                <SkillBar name="CSS3" width={85}/>
+                <SkillBar name="JavaScript" width={87}/>
+                <SkillBar name="JQuery" width={88}/>
+                <SkillBar name="ASP.NET MVC" width={82}/>
+              </div> 
+              <div className="col-md-5 language-container p-3">
+                <div className=" me-4">
+                    <h2 className="languageSkills-title otherSkills">Languages</h2>
+                    <div className="d-flex justify-content-end align-items-center m-2">
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <span className="text-white ps-1 m-0" style={{width:200,fontSize:25}}>: English</span>
+                    </div>
+                    <div className="d-flex justify-content-end align-items-center m-2">
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <span className="text-white ps-1 m-0" style={{width:200,fontSize:25}}>: Hindi</span>
+                    </div>
+                    <div className="d-flex justify-content-end align-items-center m-2">
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#ecb643" }} />
+                      <span className="text-white ps-1 m-0" style={{width:200,fontSize:25}}>: Marathi</span>
+                    </div>
+                </div>                  
+              </div>              
           </div>
         </div>
       </div>
