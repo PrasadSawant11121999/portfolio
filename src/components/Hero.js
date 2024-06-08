@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import './Hero.css';
+import profileImage from '../asset/myprofile.png';
 
 const Hero = () => {
   const hero_tagline_text = "I am a Data Scientist and Analyst specializing in Machine Learning and Deep Learning. Explore my projects and experience in transforming data into actionable insights.".split(" ");
