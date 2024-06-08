@@ -62,6 +62,7 @@ const Hero = () => {
             </div>
           </Col>
           <Col md={5}>
+            <Image src={profileImage} roundedCircle fluid />
           </Col>
         </Row>
       </Container>
