@@ -56,6 +56,10 @@ const Hero = () => {
                 </motion.span>
               ))}              
             </p>
+            <div>
+              <a href="https://storesales-analysis-dashboard.onrender.com">Know More</a>
+              <a href="#hire-me">Hire Me</a>
+            </div>
           </Col>
           <Col md={5}>
           </Col>

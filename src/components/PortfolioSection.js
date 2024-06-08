@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-const Portfolio = () => {
+const PortfolioSection = () => {
   const projects = [
     { title: 'Power BI', description: 'Description for project one' },
     { title: 'EDA -E Commerce Data', description: 'Description for project two' },
@@ -10,7 +10,7 @@ const Portfolio = () => {
 
   return (
     <Container id="portfolio">
-      <h2 className="text-center my-5">My Portfolio</h2>
+      <h2 className="text-center my-5">My Projects</h2>
       <Row>
         {projects.map((project, index) => (
           <Col md={4} key={index}>
@@ -27,4 +27,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;
