@@ -1,19 +1,21 @@
+import React from 'react';
 import './App.css';
-import Home from './Pages/Home';
-import Navbar from './Component/Navbar';
-import Footer from './Component/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavigationBar from './components/Navbar';
+import Hero from './components/Hero';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
+const App = () => {
 
-function App() {
   return (
-    <div className='Layout-index'>  
-      <Navbar />  
-      <div className=''>
-        <Home />
-      </div>
+    <div>
+      <NavigationBar />
+      <Hero />
+      <Portfolio />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

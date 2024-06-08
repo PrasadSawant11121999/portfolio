@@ -1,0 +1,78 @@
+.typewrite-custom{
+    display: flex;
+    font-size: 27px;
+    margin-bottom: 11px;
+    font-weight: 600;
+    font-family: math;
+    color: #0d92db;
+    text-shadow: 0px 0px 5px #0000007a;
+}
+.hero {
+    background: url('../asset/HeroSection.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin-top: -59px;
+    padding: 160px 0px;
+}
+
+.hero h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    text-align: left;
+    margin: 0;
+}
+
+.hero-greeting{
+    color: #0d92db;
+    font-size: 36px !important;
+    font-weight: 600;
+    text-shadow: 1px 0px 4px #848484;
+    font-family: serif;
+}
+.hero-initials{
+    color: #080808;
+    font-size: 75px !important;
+    font-weight: 600;
+    text-shadow: 1px 0px 4px #848484;
+    margin: 0px;
+    font-family: serif;
+}
+.hero-Name{
+    color: #080808;
+    font-size: 75px !important;
+    font-weight: 600;
+    text-shadow: 1px 0px 4px #848484;
+    margin: 0px;
+    color: #0d92db;
+    font-family: serif;
+}
+.hero-subtitle{
+    color: rgb(10, 10, 15);
+    font-size: 22px !important;
+    text-align: left;
+    font-family: serif;
+
+}
+.hero-tagline{
+    color: rgba(0, 0, 0, 0.418);
+    font-size: 18px !important;
+    text-align: left;
+    font-family: serif;
+}
+
+@media (max-width: 768px) {
+    .hero-greeting,.hero-subtitle{
+        text-align: center !important;
+    }
+    .typewrite-custom{
+        justify-content: center;
+    }
+    .hero p{
+        text-align: center;
+    }
+}
+  
