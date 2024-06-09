@@ -1,8 +1,10 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import './Hero.css';
+import profileImage from '../asset/myprofile.png';
 
 const Hero = () => {
   const hero_tagline_text = "I am a Data Scientist and Analyst specializing in Machine Learning and Deep Learning. Explore my projects and experience in transforming data into actionable insights.".split(" ");
@@ -56,12 +58,13 @@ const Hero = () => {
                 </motion.span>
               ))}              
             </p>
-            <div>
-              <a href="https://storesales-analysis-dashboard.onrender.com">Know More</a>
-              <a href="#hire-me">Hire Me</a>
+            <div className='hero-btn'>
+              <Link to="/AboutMe" className='hero-know-more'>Know More</Link>
+              <a href="#hire-me" className='hero-know-more'>Hire Me</a>
             </div>
           </Col>
           <Col md={5}>
+            <Image src={profileImage} roundedCircle fluid  style={{backgroundColor:"white"}}/>
           </Col>
         </Row>
       </Container>

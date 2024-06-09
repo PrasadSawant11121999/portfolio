@@ -1,0 +1,9 @@
+:root {
+    --primary-black-text-color: #080808;
+    --secondary-text-color: #043e54;
+    /*my theme pallte*/
+    --theme-color-shade1: #043e54;
+    --theme-color-shade2: #02968a;
+    --theme-color-shade3: #96dda5;
+    --theme-color-shade4: #ffff67;
+}

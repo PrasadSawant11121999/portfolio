@@ -4,7 +4,7 @@
     margin-bottom: 11px;
     font-weight: 600;
     font-family: math;
-    color: #0d92db;
+    color: var(--secondary-text-color);
     text-shadow: 0px 0px 5px #0000007a;
 }
 .hero {
@@ -13,7 +13,7 @@
     color: white;
     text-align: center;
     margin-top: -59px;
-    padding: 160px 0px;
+    padding: 160px 0px 100px;
 }
 
 .hero h2 {
@@ -27,14 +27,14 @@
 }
 
 .hero-greeting{
-    color: #0d92db;
+    color: var(--primary-black-text-color);
     font-size: 36px !important;
     font-weight: 600;
     text-shadow: 1px 0px 4px #848484;
     font-family: serif;
 }
 .hero-initials{
-    color: #080808;
+    color: var(--secondary-text-color);
     font-size: 75px !important;
     font-weight: 600;
     text-shadow: 1px 0px 4px #848484;
@@ -42,12 +42,12 @@
     font-family: serif;
 }
 .hero-Name{
-    color: #080808;
+    color: var(--primary-black-text-color);
     font-size: 75px !important;
     font-weight: 600;
     text-shadow: 1px 0px 4px #848484;
     margin: 0px;
-    color: #0d92db;
+    color: var(--secondary-text-color);
     font-family: serif;
 }
 .hero-subtitle{
@@ -63,7 +63,26 @@
     text-align: left;
     font-family: serif;
 }
+.hero-btn{
+    display: flex;
+    padding: 15px 1px;
+}
+.hero-know-more{
+    text-decoration: none;
+    padding: 4px 17px 7px;
+    background-color: var(--theme-color-shade1);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 8px;
+    border: 2px solid var(--theme-color-shade1);
+    font-weight: 500;    
 
+}
+.hero-know-more:hover{
+    background-color: transparent;
+    color: var(--theme-color-shade1);
+}
 @media (max-width: 768px) {
     .hero-greeting,.hero-subtitle{
         text-align: center !important;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Navbar.css';
-import '../Global.css';
 
 const NavigationBar = () => {
   const Name = {
