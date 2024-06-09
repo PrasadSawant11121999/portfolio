@@ -60,7 +60,7 @@ const Hero = () => {
             </p>
             <div className='hero-btn'>
               <Link to="/AboutMe" className='hero-know-more'>Know More</Link>
-              <a href="#hire-me" className='hero-know-more'>Hire Me</a>
+              <Link to="/Contact" className='hero-know-more'>Hire Me</Link>
             </div>
           </Col>
           <Col md={5}>

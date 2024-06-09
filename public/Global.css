@@ -7,3 +7,19 @@
     --theme-color-shade3: #96dda5;
     --theme-color-shade4: #ffff67;
 }
+.primary-btn-theme{
+    text-decoration: none;
+    padding: 4px 17px 7px;
+    background-color: var(--theme-color-shade1);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 8px;
+    border: 2px solid var(--theme-color-shade1);
+    font-weight: 500;    
+
+}
+.primary-btn-theme:hover{
+    background-color: transparent;
+    color: var(--theme-color-shade1);
+}

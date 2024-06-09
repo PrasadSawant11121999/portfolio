@@ -93,5 +93,8 @@
     .hero p{
         text-align: center;
     }
+    .hero-btn{
+        justify-content: center;
+    }
 }
   
