@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import NavigationBar from '../components/Navbar';
-import Footer from '../components/Footer';
 import './pages.css'
 import ContactImage from '../asset/contact.jpg';
 
@@ -15,7 +14,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://portfolioserver-40h9.onrender.com', {
+      const response = await fetch('https://portfolioserver-40h9.onrender.com/send-email/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -95,7 +94,6 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
-      <Footer/>
     </>
   );
 };

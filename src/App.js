@@ -7,18 +7,25 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
+import Footer from './components/Footer'; // Import your Footer component
 
 const App = () => {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Resume" element={<Resume />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      <div className="app">
+        <div className="content">
+          {/* Header or Navbar can go here if needed */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/Resume" element={<Resume />} />
+            <Route path="/AboutMe" element={<AboutMe />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 };

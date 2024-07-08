@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from '../components/Navbar';
-import Footer from '../components/Footer';//propic
 import profileImage from '../asset/propic.jpg';
 import { Container } from 'react-bootstrap';
 const Resume = () => {
@@ -144,7 +143,6 @@ const Resume = () => {
           </footer> */}
         </div>
        </Container>
-      <Footer />
     </div>
   );
 };
