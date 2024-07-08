@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import NavigationBar from '../components/Navbar';
 import Footer from '../components/Footer';
-import profileImage from '../asset/myprofile.png';
+import profileImage from '../asset/about.jpg';
 
 const AboutMe = () => {
   return (
