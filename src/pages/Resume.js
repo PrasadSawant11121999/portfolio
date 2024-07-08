@@ -82,7 +82,7 @@ const Resume = () => {
                 
 
                 <div className="w3-container w3-card w3-white w3-margin-bottom">
-                  <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-project fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Projects</h2>
+                  <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-bar-chart-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Projects</h2>
                   <div className="w3-container">
                     <h5 className="w3-opacity"><b>Research on Share Market Analysis</b></h5>
                     <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2023 - <span className="w3-tag w3-teal w3-round">Current</span></h6>
@@ -98,8 +98,7 @@ const Resume = () => {
                   <div className="w3-container">
                     <h5 className="w3-opacity"><b>Sale Analysis using Power BI</b></h5>
                     <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - July 2023</h6>
-                    <p>The "Sale Analysis" project leverages the robust capabilities of Power BI to deliver insightful and actionable business intelligence on sales performance. This project is a comprehensive analysis tool designed to help businesses understand their sales data, identify trends, and make data-driven decisions.</p>
-                    <hr />
+                    <p>The "Sale Analysis" project leverages the robust capabilities of Power BI to deliver insightful and actionable business intelligence on sales performance. This project is a comprehensive analysis tool designed to help businesses understand their sales data, identify trends, and make data-driven decisions.</p>                    
                   </div>           
                 </div>
 
@@ -107,14 +106,24 @@ const Resume = () => {
                   <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>                  
                   <div className="w3-container">
                     <h5 className="w3-opacity"><b>Master Degree In Mathematics</b></h5>
+                    <h6 className="w3-text-teal">University Of Mumbai</h6>
                     <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2023</h6>
-                    <p>Master Degree</p>
+                    <ul>
+                      <li>Developed a strong foundation in advanced mathematical theories and applications.</li>
+                      <li>Completed coursework in subjects including Linear Algebra, Differential Equations, Probability, and Statistics.</li>
+                      <li>Conducted a research project on "Share Market Analysis", demonstrating analytical and problem-solving skills.</li>
+                      <li>Collaborated with professors and peers on various mathematical modeling and data analysis projects.</li>
+                    </ul>
                     <hr />
                   </div>
                   <div className="w3-container">
                     <h5 className="w3-opacity"><b>Bachelor Degree In Mathematics</b></h5>
                     <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021</h6>
-                    <p>Bachelor Degree</p><br />
+                    <ul>
+                      <li>Acquired comprehensive knowledge in pure and applied mathematics.</li>
+                      <li>Completed coursework in Calculus, Abstract Algebra, Mathematical Analysis, and Discrete Mathematics.</li>
+                      <li>Gained experience in using mathematical software and tools for data analysis and problem-solving.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
