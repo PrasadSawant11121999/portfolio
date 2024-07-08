@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from '../components/Navbar';
 import Footer from '../components/Footer';//propic
 import profileImage from '../asset/propic.jpg';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 const Resume = () => {
 
   return (
@@ -53,11 +53,11 @@ const Resume = () => {
                     <div className="w3-light-grey w3-round-xlarge">
                       <div className="w3-round-xlarge w3-teal" style={{ height: "24px", width: "100%" }}></div>
                     </div>
-                    <p>Spanish</p>
+                    <p>Hindi</p>
                     <div className="w3-light-grey w3-round-xlarge">
                       <div className="w3-round-xlarge w3-teal" style={{ height: "24px", width: "55%" }}></div>
                     </div>
-                    <p>German</p>
+                    <p>Marathi</p>
                     <div className="w3-light-grey w3-round-xlarge">
                       <div className="w3-round-xlarge w3-teal" style={{ height: "24px", width: "25%" }}></div>
                     </div>
@@ -72,41 +72,48 @@ const Resume = () => {
                 <div className="w3-container w3-card w3-white w3-margin-bottom">
                   <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
                   <div className="w3-container">
-                    <h5 className="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span className="w3-tag w3-teal w3-round">Current</span></h6>
+                    <h5 className="w3-opacity"><b>Software Developer</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - <span className="w3-tag w3-teal w3-round">Current</span></h6>
                     <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
                     <hr />
-                  </div>
+                  </div>                  
+                </div>
+
+                
+
+                <div className="w3-container w3-card w3-white w3-margin-bottom">
+                  <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-project fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Projects</h2>
                   <div className="w3-container">
-                    <h5 className="w3-opacity"><b>Web Developer / something.com</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                    <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                    <h5 className="w3-opacity"><b>Research on Share Market Analysis</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2023 - <span className="w3-tag w3-teal w3-round">Current</span></h6>
+                    <p>The "Mathematical Research on Share Market Analysis" project focuses on applying advanced mathematical techniques and models to analyze and predict stock market behavior. This project aims to uncover patterns, trends, and correlations within the stock market data to provide deeper insights and more accurate forecasts.</p>
                     <hr />
-                  </div>
+                  </div> 
                   <div className="w3-container">
-                    <h5 className="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br />
-                  </div>
+                    <h5 className="w3-opacity"><b>Dashboard Design using Streamlit</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2023 - Nov 2023</h6>
+                    <p>The "Dashboard Design for Stock Data" project utilizes Streamlit, a Python library, to develop an interactive and user-friendly dashboard for analyzing stock market data. This project aims to provide a powerful tool for investors, traders, and financial analysts to monitor and analyze stock performance.</p>
+                    <hr />
+                  </div>  
+                  <div className="w3-container">
+                    <h5 className="w3-opacity"><b>Sale Analysis using Power BI</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - July 2023</h6>
+                    <p>The "Sale Analysis" project leverages the robust capabilities of Power BI to deliver insightful and actionable business intelligence on sales performance. This project is a comprehensive analysis tool designed to help businesses understand their sales data, identify trends, and make data-driven decisions.</p>
+                    <hr />
+                  </div>           
                 </div>
 
                 <div className="w3-container w3-card w3-white">
-                  <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                  <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>                  
                   <div className="w3-container">
-                    <h5 className="w3-opacity"><b>W3Schools.com</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                    <p>Web Development! All I need to know in one place</p>
-                    <hr />
-                  </div>
-                  <div className="w3-container">
-                    <h5 className="w3-opacity"><b>London Business School</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+                    <h5 className="w3-opacity"><b>Master Degree In Mathematics</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2023</h6>
                     <p>Master Degree</p>
                     <hr />
                   </div>
                   <div className="w3-container">
-                    <h5 className="w3-opacity"><b>School of Coding</b></h5>
-                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+                    <h5 className="w3-opacity"><b>Bachelor Degree In Mathematics</b></h5>
+                    <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021</h6>
                     <p>Bachelor Degree</p><br />
                   </div>
                 </div>
