@@ -4,3 +4,17 @@
     background-position: center;
     height: 100%;
   }
+
+.contact-options{
+  font-size: 60px;
+  padding:25px;
+  text-align:center;
+}
+.link-no-color {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+
+.link-no-color:hover {
+  color: inherit; /* Ensure the color remains the same on hover */
+}

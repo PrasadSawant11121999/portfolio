@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import NavigationBar from '../components/Navbar';
 import './pages.css'
-import ContactImage from '../asset/contact.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,17 +40,38 @@ const Contact = () => {
     const { id, value } = event.target;
     setFormData({ ...formData, [id]: value });
   };
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   return (
     <>
       <NavigationBar />
-      <Container className='mb-5'>
-        <Row className="justify-content-center mt-5 shadow" style={{boxShadow: '0px 0px 15px 11px #8080804a'}}>
-          <Col md={6} className='p-0'>
-            <Image src={ContactImage} style={{backgroundColor:"white", width:'100%'}}/>
+      <Container className='mb-5' id='contactus'>
+        <Row className="justify-content-center m-3 mt-5 shadow" style={{boxShadow: '15px 11px 15px 11px #8080804a'}}>
+          <Col md={2} className={`${isMobile ? 'd-flex justify-content-center flex-wrap' : ''} p-0`} style={{backgroundColor:'var(--theme-color-shade2)'}}>
+            <a href="#contactus" rel="noopener noreferrer" className='link-no-color'>
+              <i className={`${isMobile ? '' : 'mt-4'} fa-brands fa-google d-block text-white contact-options`}></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='link-no-color'>
+              <i className="fa-brands fa-facebook d-block text-white contact-options"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prasadsawant11" target="_blank" rel="noopener noreferrer" className='link-no-color'>
+              <i className="fa-brands fa-linkedin d-block text-white contact-options"></i>
+            </a>
+            <a href="https://www.instagram.com/prasad_s1999?igsh=N3N0b2lpdXNxZGln" target="_blank" rel="noopener noreferrer" className='link-no-color'>
+              <i className="fa-brands fa-instagram d-block text-white contact-options"></i>
+            </a>
           </Col>
-          <Col md={6} style={{padding:'10px 15px 20px',}}>
-            <h2 className="text-center pt-5 mt-5" style={{fontSize:'40px'}}>Contact Me</h2>
+          <Col md={10} style={{padding:'10px 15px 20px',}}>
+            <h2 className="text-center pt-5" style={{fontSize:'40px'}}>Contact Me</h2>
             <Form onSubmit={handleSubmit} className='pe-4 ps-4 pb-3'>
               <Form.Group controlId="name" className='pe-4 ps-4 pb-3 pt-4'>
                 <Form.Label>Name</Form.Label>
@@ -85,7 +105,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                 />
-                <Button variant="primary" type="submit" className='mt-3' style={{width: '100%'}}>
+                <Button variant="primary" type="submit" className='mt-3' style={{width: '100%',backgroundColor:'var(--theme-color-shade2)', border:'none'}}>
                   Submit
                 </Button>
               </Form.Group>
