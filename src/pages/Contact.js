@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import NavigationBar from '../components/Navbar';
-import './pages.css'
+import './pages.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,9 +9,11 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true); // Disable the button
     try {
       const response = await fetch('https://portfolioserver-40h9.onrender.com/send-email/', {
         method: 'POST',
@@ -33,6 +35,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending email:', error);
       alert('An error occurred while sending the email.');
+    } finally {
+      setIsLoading(false); // Re-enable the button
     }
   };
 
@@ -40,9 +44,11 @@ const Contact = () => {
     const { id, value } = event.target;
     setFormData({ ...formData, [id]: value });
   };
+  
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
   };
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -51,12 +57,13 @@ const Contact = () => {
   }, []);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
   return (
     <>
       <NavigationBar />
-      <Container className='mb-5' id='contactus'>
-        <Row className="justify-content-center m-3 mt-5 shadow" style={{boxShadow: '15px 11px 15px 11px #8080804a'}}>
-          <Col md={2} className={`${isMobile ? 'd-flex justify-content-center flex-wrap' : ''} p-0`} style={{backgroundColor:'var(--theme-color-shade2)'}}>
+      <Container className='justify-content-center align-items-center p-5' id='contactus'>
+        <Row className="justify-content-center m-5 mt-5 shadow" style={{ boxShadow: '15px 11px 15px 11px #8080804a' }}>
+          <Col md={2} className={`${isMobile ? 'd-flex justify-content-center flex-wrap' : ''} p-0`} style={{ backgroundColor: 'var(--theme-color-shade2)' }}>
             <a href="#contactus" rel="noopener noreferrer" className='link-no-color'>
               <i className={`${isMobile ? '' : 'mt-4'} fa-brands fa-google d-block text-white contact-options`}></i>
             </a>
@@ -70,8 +77,8 @@ const Contact = () => {
               <i className="fa-brands fa-instagram d-block text-white contact-options"></i>
             </a>
           </Col>
-          <Col md={10} style={{padding:'10px 15px 20px',}}>
-            <h2 className="text-center pt-5" style={{fontSize:'40px'}}>Contact Me</h2>
+          <Col md={10} style={{ padding: '10px 15px 20px' }}>
+            <h2 className="text-center pt-5" style={{ fontSize: '40px' }}>Contact Me</h2>
             <Form onSubmit={handleSubmit} className='pe-4 ps-4 pb-3'>
               <Form.Group controlId="name" className='pe-4 ps-4 pb-3 pt-4'>
                 <Form.Label>Name</Form.Label>
@@ -80,6 +87,7 @@ const Contact = () => {
                   placeholder="Enter your name" 
                   value={formData.name}
                   onChange={handleChange}
+                  required // Make the name field required
                 />
               </Form.Group>
 
@@ -90,6 +98,7 @@ const Contact = () => {
                   placeholder="Enter your email" 
                   value={formData.email}
                   onChange={handleChange}
+                  required // Make the email field required
                 />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
@@ -105,11 +114,16 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                 />
-                <Button variant="primary" type="submit" className='mt-3' style={{width: '100%',backgroundColor:'var(--theme-color-shade2)', border:'none'}}>
-                  Submit
+                <Button 
+                  variant="primary" 
+                  type="submit" 
+                  className='mt-3' 
+                  style={{ width: '100%', backgroundColor: 'var(--theme-color-shade2)', border: 'none', fontSize: '22px' }} 
+                  disabled={isLoading}
+                >
+                  {isLoading ? 'Submitting...' : 'Submit'}
                 </Button>
               </Form.Group>
-              
             </Form>
           </Col>
         </Row>
