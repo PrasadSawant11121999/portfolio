@@ -7,21 +7,21 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import Footer from './components/Footer'; // Import your Footer component
+import EcommerceProject1 from './projects/Ecomerceexcelproject';
+import Footer from './components/Footer'; // Ensure this path is correct
 
 const App = () => {
-
   return (
     <Router>
       <div className="app">
         <div className="content">
-          {/* Header or Navbar can go here if needed */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/Resume" element={<Resume />} />
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/ECommerceReport_Project1" element={<EcommerceProject1 />} />
           </Routes>
         </div>
         <Footer />
