@@ -8,7 +8,8 @@
     text-shadow: 0px 0px 5px #0000007a;
 }
 .hero {
-    background: url('../asset/HeroSection.png') no-repeat center center;
+    background: url('../../Documentation/Home.png') no-repeat center center;
+    /* background: url('../asset/HeroSection.png') no-repeat center center; */
     background-size: cover;
     color: white;
     text-align: center;

@@ -13,7 +13,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true); // Disable the button
+    setIsLoading(true);
     try {
       const response = await fetch('https://portfolioserver-40h9.onrender.com/send-email/', {
         method: 'POST',
@@ -36,7 +36,7 @@ const Contact = () => {
       console.error('Error sending email:', error);
       alert('An error occurred while sending the email.');
     } finally {
-      setIsLoading(false); // Re-enable the button
+      setIsLoading(false);
     }
   };
 
@@ -87,7 +87,7 @@ const Contact = () => {
                   placeholder="Enter your name" 
                   value={formData.name}
                   onChange={handleChange}
-                  required // Make the name field required
+                  required
                 />
               </Form.Group>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                   placeholder="Enter your email" 
                   value={formData.email}
                   onChange={handleChange}
-                  required // Make the email field required
+                  required
                 />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
